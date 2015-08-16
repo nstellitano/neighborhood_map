@@ -18,6 +18,7 @@
                     <h3 data-bind="text: dest()[0].city"></h3>
             </header>
 
+            <hr>
             <section>
                 <div id = "yelp" class ="yelp 3dinput">
                     <h3>Put Yelp Stuff Here</h3>
@@ -32,7 +33,7 @@
 
             <section>
                 <div id = "geonames" class ="geonames 3dinput">
-                    <h3>Put Foursquare Stuff Here</h3>
+                    <h3>Put Geonames Stuff Here</h3>
                 </div>
             </section>
 
@@ -56,17 +57,8 @@
 
 <script>
 
-    $( document ).ready(run())
+    $( document ).ready(octopus.init())
 
-    function run() {
-
-        var neighborhood = new hood(destinations_london);
-        console.log(neighborhood)
-        var origin = new google.maps.LatLng(neighborhood.dest()[0].lat, neighborhood.dest()[0].long);
-        ko.applyBindings(neighborhood);
-        var london = new map(origin, neighborhood);
-        london.initialize()
-    }
 </script>
 </body>
 </html>

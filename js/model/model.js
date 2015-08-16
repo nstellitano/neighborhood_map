@@ -40,46 +40,46 @@ var hood = function(destinations) {
 };
 
 //Define and build the map utilizing the origin and neighborhood based on the desired locaiton of the user
-var map = function(origin, neighborhood) {
-    this.initialize = function() {
-        var geocoder = new google.maps.Geocoder();
-        //directionsDisplay = new google.maps.DirectionsRenderer();
-
-        var mapOptions = {
-            zoom: 11,
-            center: origin
-        };
-
-        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-        //directionsDisplay.setMap(map);
-
-        var infowindow = new google.maps.InfoWindow();
-
-        var marker;
-
-        for (var i = 1; i < neighborhood.dest().length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(neighborhood.dest()[i].lat, neighborhood.dest()[i].long),
-                map: map
-            });
-
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-
-                return function () {
-
-                    //dest.A = marker.position.A;
-                    //dest.F = marker.position.F
-
-                    infowindow.setContent(neighborhood.dest()[i].name);
-                    infowindow.open(map, marker);
-
-                    map.setZoom(11);
-                    map.setCenter(marker.getPosition());
-                }
-            })(marker, i));
-        }
-    }
-};
+//var map = function(origin, neighborhood) {
+//    this.initialize = function() {
+//        var geocoder = new google.maps.Geocoder();
+//        //directionsDisplay = new google.maps.DirectionsRenderer();
+//
+//        var mapOptions = {
+//            zoom: 11,
+//            center: origin
+//        };
+//
+//        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+//        //directionsDisplay.setMap(map);
+//
+//        var infowindow = new google.maps.InfoWindow();
+//
+//        var marker;
+//
+//        for (var i = 1; i < neighborhood.dest().length; i++) {
+//            marker = new google.maps.Marker({
+//                position: new google.maps.LatLng(neighborhood.dest()[i].lat, neighborhood.dest()[i].long),
+//                map: map
+//            });
+//
+//            google.maps.event.addListener(marker, 'click', (function (marker, i) {
+//
+//                return function () {
+//
+//                    //dest.A = marker.position.A;
+//                    //dest.F = marker.position.F
+//
+//                    infowindow.setContent(neighborhood.dest()[i].name);
+//                    infowindow.open(map, marker);
+//
+//                    map.setZoom(11);
+//                    map.setCenter(marker.getPosition());
+//                }
+//            })(marker, i));
+//        }
+//    }
+//};
 
 
 
