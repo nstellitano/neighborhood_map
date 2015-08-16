@@ -7,12 +7,42 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<div id = "container" class = "container">
-    <div id = "map-canvas" class ="map-canvas"></div>
+<div id = "container" class = "container text-center">
+    <section>
+        <div id = "map-canvas" class ="map-canvas"></div>
+    </section>
 
-    <div id = "info_bar" class ="info_bar">
-        <h3>Hi where am I</h3>
-    </div>
+    <aside>
+        <div id = "info_bar" class ="info_bar text-center">
+            <header>
+                    <h3 data-bind="text: dest()[0].city"></h3>
+            </header>
+
+            <section>
+                <div id = "yelp" class ="yelp 3dinput">
+                    <h3>Put Yelp Stuff Here</h3>
+                </div>
+            </section>
+
+            <section>
+                <div id = "youtube" class ="youtube 3dinput">
+                    <h3>Put YouTube stuff here</h3>
+                </div>
+            </section>
+
+            <section>
+                <div id = "geonames" class ="geonames 3dinput">
+                    <h3>Put Foursquare Stuff Here</h3>
+                </div>
+            </section>
+
+            <section>
+                <div id = "foursquare" class ="foursquare 3dinput">
+                    <h3>Put Foursquare Stuff Here</h3>
+                </div>
+            </section>
+        </div>
+    </aside>
 </div>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -29,7 +59,9 @@
     $( document ).ready(run())
 
     function run() {
+
         var neighborhood = new hood(destinations_london);
+        console.log(neighborhood)
         var origin = new google.maps.LatLng(neighborhood.dest()[0].lat, neighborhood.dest()[0].long);
         ko.applyBindings(neighborhood);
         var london = new map(origin, neighborhood);
