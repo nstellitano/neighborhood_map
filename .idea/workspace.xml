@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c62b441-6736-45ec-b251-5d92a456fa41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/view/app.js" afterPath="$PROJECT_DIR$/js/view/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/view_model/view_model.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/view/app.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/model/model.js" afterPath="$PROJECT_DIR$/js/model/model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="map_tool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,30 +31,30 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state vertical-scroll-proportion="-19.375">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/view/app.js">
+      <file leaf-file-name="view_model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/view_model/view_model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.52506596">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="e#0#51#0" expanded="false" />
+                <element signature="e#0#52#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/model/model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.765625">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="81" selection-end-column="2" />
               <folding>
                 <element signature="e#0#51#0" expanded="false" />
               </folding>
@@ -62,9 +65,12 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.428571">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="6" selection-end-line="26" selection-end-column="29" />
-              <folding />
+            <state vertical-scroll-proportion="-5.892857">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+              <folding>
+                <marker date="1439685249000" expanded="true" signature="11:99" placeholder="{...}" />
+                <marker date="1439685249000" expanded="true" signature="113:217" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,10 +92,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/model/model.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/view/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/view_model/view_model.js" />
+        <option value="$PROJECT_DIR$/js/model/model.js" />
       </list>
     </option>
   </component>
@@ -101,8 +108,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="47" />
+    <option name="x" value="48" />
+    <option name="y" value="116" />
     <option name="width" value="1630" />
     <option name="height" value="1003" />
   </component>
@@ -162,22 +169,8 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="map_tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map_tool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="view_model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,10 +345,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="47" width="1630" height="1003" extended-state="0" />
+    <frame x="48" y="116" width="1630" height="1003" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07776561" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19824754" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -392,34 +385,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.428571">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="6" selection-end-line="26" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="-5.892857">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <marker date="1439685249000" expanded="true" signature="11:99" placeholder="{...}" />
+            <marker date="1439685249000" expanded="true" signature="113:217" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state vertical-scroll-proportion="-19.375">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/view_model/view_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#52#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/model/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/view/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52506596">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.765625">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="81" selection-end-column="2" />
           <folding>
             <element signature="e#0#51#0" expanded="false" />
           </folding>

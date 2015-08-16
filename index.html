@@ -21,6 +21,20 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 
 <script src="js/model/model.js"></script>
-<script src="js/view/app.js"></script>
+<script src="js/view_model/view_model.js"></script>
+
+
+<script>
+
+    $( document ).ready(run())
+
+    function run() {
+        var neighborhood = new hood(destinations_london);
+        var origin = new google.maps.LatLng(neighborhood.dest()[0].lat, neighborhood.dest()[0].long);
+        ko.applyBindings(neighborhood);
+        var london = new map(origin, neighborhood);
+        london.initialize()
+    }
+</script>
 </body>
 </html>
