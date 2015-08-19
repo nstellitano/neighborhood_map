@@ -32,7 +32,7 @@ var destinations_london = [
 
 //Define neighbor"hood" for the model.
 var spot = function(destinations) {
-    this.dest = ko.observable(destinations.name);
+    this.name = ko.observable(destinations.name);
     this.lat = ko.observable(destinations.lat);
     this.long = ko.observable(destinations.long);
     this.description = ko.observable(destinations.description);

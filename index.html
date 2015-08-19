@@ -15,14 +15,14 @@
     <aside>
         <div id = "info_bar" class ="info_bar text-center">
             <header>
-                    <h3 data-bind="text: dest()[0].city"></h3>
+                    <!--<h3 data-bind="text: dest()[0].city"></h3>-->
             </header>
 
             <hr>
             <section>
                 <div id = "weather" class ="weather 3dinput">
                     <h3>Put Weather Stuff Here</h3>
-                    <h3 data-bind="text: dest()[0].city"></h3>
+                    <h3 data-bind="text: currentSpot().name"></h3>
                 </div>
             </section>
 
@@ -60,7 +60,13 @@
 
 <script>
 
-    $( document ).ready(octopus.init())
+    $( document ).ready(run())
+
+    function run(){
+        var app = new octopus();
+        ko.applyBindings(app)
+        app.init();
+    }
 
 </script>
 
