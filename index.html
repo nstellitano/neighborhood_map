@@ -20,8 +20,9 @@
 
             <hr>
             <section>
-                <div id = "yelp" class ="yelp 3dinput">
-                    <h3>Put Yelp Stuff Here</h3>
+                <div id = "weather" class ="weather 3dinput">
+                    <h3>Put Weather Stuff Here</h3>
+                    <h3 data-bind="text: dest()[0].city"></h3>
                 </div>
             </section>
 
@@ -44,6 +45,8 @@
             </section>
         </div>
     </aside>
+
+
 </div>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -60,5 +63,7 @@
     $( document ).ready(octopus.init())
 
 </script>
+
+
 </body>
 </html>
