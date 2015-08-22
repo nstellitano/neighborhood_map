@@ -7,28 +7,29 @@ var neighborhood, origin, map, marker, infowindow;
 var octopus = function() {
 
     var that = this;
-    this.currentSpot;
+
 
     this.init = function(){
 
-        this.setNeighborhood();
-        this.buildMap(that.origin);
-        this.setPointsOfInterest(that.neighborhood);
+        that.setNeighborhood(destinations_london);
+        that.buildMap(that.origin);
+        that.setPointsOfInterest(that.neighborhood);
 
     };
 
-    this.setNeighborhood = function(){
+    this.setNeighborhood = function(city){
 
         that.neighborhood = ko.observableArray([]);
+        that.cityName = city[0].city
 
-        destinations_london.forEach(function(spots,i) {
+        city.forEach(function(spots,i) {
             if(i==0){}else {
                 that.neighborhood.push(new spot(spots));
             }
         });
 
         that.currentSpot = ko.observable(that.neighborhood()[0]);
-        that.origin = new google.maps.LatLng(destinations_london[0].lat, destinations_london[0].long);
+        that.origin = new google.maps.LatLng(city[0].lat, city[0].long);
     };
 
     this.buildMap = function(origin){
@@ -41,7 +42,6 @@ var octopus = function() {
     };
 
     this.setPointsOfInterest = function(neighborhood){
-        that = this;
         infowindow = new google.maps.InfoWindow();
 
         for (var i = 0; i < that.neighborhood().length; i++) {
@@ -61,6 +61,7 @@ var octopus = function() {
                     map.setCenter(marker.getPosition());
 
                     that.getWeather(neighborhood()[i].lat(), neighborhood()[i].long() , i)
+                    that.currentSpot(that.neighborhood()[i]);
                 }
             })(marker, i));
         }
@@ -70,7 +71,6 @@ var octopus = function() {
         var url = "http://api.wunderground.com/api/0336bd7bfed51415/conditions/q/" + lat + "," + long + ".json"
         $.getJSON(url, function(data) {
             that.neighborhood()[i].weather = data;
-            console.log(that.neighborhood()[i].weather)
         });
 
     }
